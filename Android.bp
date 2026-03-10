@@ -56,5 +56,24 @@ cc_library_shared {
     export_include_dirs: [ "." ],
     local_include_dirs: [ "config" ],
     shared_libs: [ "libcups", "libcupsfilters", "libz" ],
+    required: [ "font.defs", "media.defs", "raster.defs", ],
+}
+
+prebuilt_etc {
+    name: "font.defs",
+    src: "ppd/font.defs",
+    relative_install_path: "ppdc",
+}
+
+prebuilt_etc {
+    name: "media.defs",
+    src: "ppd/media.defs",
+    relative_install_path: "ppdc",
+}
+
+prebuilt_etc {
+    name: "raster.defs",
+    src: "ppd/raster.defs",
+    relative_install_path: "ppdc",
 }
 

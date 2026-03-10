@@ -5,7 +5,8 @@
 #define CUPS_ACROREAD "acroread"
 
 /* CUPS datadir */
-#define CUPS_DATADIR "/usr/share/cups"
+//#define CUPS_DATADIR "/usr/share/cups"
+#define CUPS_DATADIR "/system/etc/cups"
 
 /* Path to CUPS fonts dir */
 #define CUPS_FONTPATH "/usr/share/cups/fonts"
@@ -29,13 +30,16 @@
 #define CUPS_POPPLER_PDFTOPS "pdftops"
 
 /* Path to CUPS binaries dir */
-#define CUPS_SERVERBIN "/usr/lib/cups"
+//#define CUPS_SERVERBIN "/usr/lib/cups"
+#define CUPS_SERVERBIN "/system/bin"
 
 /* CUPS serverroot */
-#define CUPS_SERVERROOT "/etc/cups"
+//#define CUPS_SERVERROOT "/etc/cups"
+#define CUPS_SERVERROOT "/system/etc/cups"
 
 /* Transient run-time state dir of CUPS */
-#define CUPS_STATEDIR "/var/run/cups"
+//#define CUPS_STATEDIR "/var/run/cups"
+#define CUPS_STATEDIR "/data/cups/run"
 
 /* Define to 1 if translation of program messages to the user's native
    language is requested. */
@@ -198,7 +202,7 @@
 #define PACKAGE_VERSION "2.1.1"
 
 /* ppdc include dir */
-#define PPDC_DATADIR "/usr/share/ppdc"
+#define PPDC_DATADIR "/system/etc/ppdc"
 
 /* Define to 1 if all of the C90 standard headers exist (not just the ones
    required in a freestanding environment). This macro is provided for
